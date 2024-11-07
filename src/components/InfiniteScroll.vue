@@ -41,7 +41,7 @@ const loadUsers = async (): Promise<void> => {
   try {
     const newUsers: User[] = await fetchUsers(page.value);
     // Append newly loaded users to the existing list
-    if (newUsers.length > 0) {
+    if (newUsers.length) {
       users.value = [...users.value, ...newUsers];
     }
   } catch (error) {
@@ -102,7 +102,6 @@ onMounted(() => {
   border: solid 4px #dddddd80;
   border-radius: 10px;
   min-width: 90vw;
-  width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 

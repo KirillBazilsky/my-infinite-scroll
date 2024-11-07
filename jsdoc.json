@@ -1,0 +1,27 @@
+{
+    "source": {
+      "include": ["src"],
+      "includePattern": ".(js|ts|vue)$",
+      "excludePattern": "(node_modules|docs)"
+    },
+    "opts": {
+      "destination": "./docs",
+      "recurse": true,
+      "encoding": "utf8"
+    },
+    "plugins": [
+        "plugins/markdown",
+        "node_modules/jsdoc-vuejs",
+        "node_modules/jsdoc-vuejs",
+        "node_modules/jsdoc-babel"
+    ],
+    "templates": {
+      "default": {
+        "outputSourceFiles": false, 
+        "includeDate": false 
+        }
+    },
+    "babel": {
+    "extensions": ["ts"]
+  }
+}

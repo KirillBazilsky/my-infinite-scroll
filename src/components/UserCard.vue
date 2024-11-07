@@ -33,7 +33,7 @@ const props = defineProps<IProps>();
  * Styles for the user card container, including border, padding, and box-shadow.
  */
 .user-card {
-  width: 10%;
+  width: 15%;
   min-height: 200px;
   min-width: 200px;
   padding: 16px;
