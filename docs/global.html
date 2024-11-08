@@ -104,7 +104,7 @@
     
 
     
-    <h4 class="name" id="fetchUsers"><span class="type-signature">(async) </span>fetchUsers<span class="signature">(page)</span><span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;<a href="User.html">User</a>>>}</span></h4>
+    <h4 class="name" id="fetchUsers"><span class="type-signature">(async) </span>fetchUsers<span class="signature">(inc, page)</span><span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;IUserData>>}</span></h4>
     
 
     
@@ -144,6 +144,29 @@
     </thead>
 
     <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>inc</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data fields to response</p></td>
+        </tr>
+
     
 
         <tr>
@@ -269,7 +292,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise.&lt;Array.&lt;<a href="User.html">User</a>>></span>
+<span class="param-type">Promise.&lt;Array.&lt;IUserData>></span>
 
 
     </dd>
@@ -297,7 +320,7 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Interfaces</h3><ul><li><a href="User.html">User</a></li></ul><h3>Global</h3><ul><li><a href="global.html#fetchUsers">fetchUsers</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#fetchUsers">fetchUsers</a></li></ul>
 </nav>
 
 <br class="clear">
